@@ -8,16 +8,18 @@ interface AuthProps {
   togglePage: () => void;
 }
 
-const LoginPage = ({ togglePage }: AuthProps) => {
+const RegisterPage = ({ togglePage }: AuthProps) => {
   return (
     <_.Container>
       <_.Content>
         <_.Logo src={Logo} />
 
-        <h1>Welcome back, Developer</h1>
+        <h1>Create your account!</h1>
 
+        <input type="text" name="email" placeholder="Name" />
         <input type="email" name="email" placeholder="Email" />
         <input type="password" name="password" placeholder="Password" />
+        <input type="password" name="password" placeholder="Confirm password" />
 
         <Button isPrimary>Log In</Button>
 
@@ -29,4 +31,4 @@ const LoginPage = ({ togglePage }: AuthProps) => {
   );
 };
 
-export default LoginPage;
+export default RegisterPage;

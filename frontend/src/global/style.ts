@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     *{
         padding: 0px;
         margin: 0px;
+        box-sizing: border-box;
     }
 
     body {
@@ -15,5 +16,10 @@ export const GlobalStyle = createGlobalStyle`
           font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+    }
+
+    input {
+        border: none;
+        padding: 1rem;
     }
 `;
