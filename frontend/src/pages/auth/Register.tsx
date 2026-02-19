@@ -21,10 +21,10 @@ const RegisterPage = ({ togglePage }: AuthProps) => {
         <input type="password" name="password" placeholder="Password" />
         <input type="password" name="password" placeholder="Confirm password" />
 
-        <Button isPrimary>Log In</Button>
+        <Button isPrimary>Create Account</Button>
 
         <_.ChangeVisibilityContainer>
-          Don't have account? <span onClick={togglePage}>Create account</span>
+          Have an account? <span onClick={togglePage}>Log in</span>
         </_.ChangeVisibilityContainer>
       </_.Content>
     </_.Container>
